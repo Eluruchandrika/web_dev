@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* positions / display properties
+static -->default
+fixed -->does not move with scrolling /fix something at specific position
+sticky --> moves with scrolling but when reaches its specified position  it stays there.
+absolute --> to move an ele on one level top 
+relative --> to move absolute inside the parent insted  of moving in whole screen
+*/
+
+/* 
+display properties: 
+block --> does not allow anything size by size --> h1,p,div etc
+inline  --> allows everything size by size --> span,a ,img
+inline-block  --> like inline but takes block width and height-->  li,td,th
+none --> hide the element completely
+*/
+
+.card{
+    /* display: none; */
+    width: 350px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin: 40px auto;
+    border-radius: 14px;
+}
+
+
+/* fixed */
+.btn{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 25px;
+    font-size: 15px ;
+    position: fixed;
+    top: 20px; 
+    right: 20px;
+}
+
+/* top,bottom,left,right -> distance from that direction*/
+
+/* sticky */
+
+.header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding:  10px;
+}
+
+/* absolute & relative */
+.bg{
+    width: 500px;
+    margin:80px auto;
+    position: relative;
+    /* display: none; */
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 14px;
+}
+
+.content{
+    position: absolute;
+    color: white;
+    left: 20px;
+    bottom: 50px;
+    z-index: 1;
+}
+/* z-index default value 0 */
+
+.button{
+    background-color: rgb(234, 229, 229);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 40px;
+    padding: 10px 25px;
+    font-size: 15px ;
+    text-align: center;
+}
+
+.tint{
+    background-color: rgba(0, 0, 0, 0.354);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute; 
+    border-radius: 14px;
+    top: 0;
+}
+
+/* display */
+
+.card1{
+    width: 450px;
+    border: 1px  solid #ccc;
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 14px;
+
+}
+
+.user{
+    height: 100px;
+    border-radius: 50%;
+}
+
+.center{
+    text-align: center;
+}
+
+.link{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 12px;
+    border-radius: 40px;
+    display: inline-block;
+
+}
