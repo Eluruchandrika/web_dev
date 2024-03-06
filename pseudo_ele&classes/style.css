@@ -1,0 +1,116 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bg{
+    width: 500px;
+    height: 300px;
+    background-image: url('https://source.unsplash.com/1600x1000/?hotel');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.filter{
+    height: 300px;
+    filter: brightness(1) blur(3px);
+}
+
+.transform{
+    width: 280px;
+    padding: 10px;
+    margin: 80px auto;
+    border-radius: 14px;
+    background-color: lightgray;
+    transform: scale(1.80);
+    transform: rotate(-6deg);
+    transform: skew(10deg);
+    transform: translate(50px,50px); 
+    /* translate won't affect other elements like margin */
+
+}
+
+/* pseudo elements
+   ::first-line
+   ::first-letter
+   ::selection
+   ::before
+   ::after
+*/
+
+.head::first-line{
+    color: red;
+}
+.head::first-letter{
+    font-size: 50px;
+}
+.head::selection{
+    background-color: blueviolet;
+    color: white;
+}
+
+/* pseudo classes
+   hover
+   focus
+   active
+   first-child
+   last-child
+   nth-child
+   not
+*/
+
+.filter:hover{
+    filter: blur(0);
+    cursor: pointer ;
+    width:300px ;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.input{
+    width: 200px;
+    padding: 10px;
+    border-radius: 14px;
+    font-size: 16px;
+    border: 1px solid lightgray;
+}
+
+.input:focus{
+    border: 2px solid rgb(132, 0, 255);
+    outline: none;
+}
+button{
+    width: 50px;
+    padding: 10px;
+    border-radius: 14px;
+    border: 1px solid lightgray;
+}
+button:active{
+    background-color: blueviolet;
+}
+
+p:first-child{
+    color: red;
+}
+
+p:last-child{
+    color: blueviolet;
+}
+
+p:nth-child(2n){
+    color: rgb(52, 125, 125);
+}
+
+.test::before{
+    content: "#";
+}
+
+.test::after{
+    content: '!!';
+}
